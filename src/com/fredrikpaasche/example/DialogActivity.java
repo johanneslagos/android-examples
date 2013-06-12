@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.Toast;
 
-import com.fredrikpaasche.example.EditNameDialog.EditNameDialogListener;
+import com.fredrikpaasche.example.EditNameDialogFragment.EditNameDialogListener;
 
 // A custom class that can display a single dialog. It also listens for callbacks from the dialog.
 public class DialogActivity extends FragmentActivity implements EditNameDialogListener {
@@ -47,6 +47,11 @@ public class DialogActivity extends FragmentActivity implements EditNameDialogLi
 	// The Dialog button was clicked
 	public void onClickDisplayDialog(View v) {
 		showEditDialog();
+	}
+
+	// The Alert inside dialog button was clicked
+	public void onClickDisplayAlertDialog(View v) {
+		showAlertDialog();
 	}
 
 	// ------------------------------------------------------------------
@@ -165,18 +170,35 @@ public class DialogActivity extends FragmentActivity implements EditNameDialogLi
 	};
 
 	// ------------------------------------------------------------------
-	// Display a dialog using a dialog fragment
+	// Display a dialog using a dialog fragment. This is the safest way,
+	// since rotation will be handled automatically.
 	// ------------------------------------------------------------------
 	private void showEditDialog() {
 		FragmentManager fragmentManager = getSupportFragmentManager();
-		EditNameDialog editNameDialog = new EditNameDialog();
-		editNameDialog.show(fragmentManager, "fragment_edit_name");
+		EditNameDialogFragment editNameDialog = new EditNameDialogFragment();
+		editNameDialog.show(fragmentManager, "alert_dialog");
 	}
 
 	@Override
 	// The dialog has finished and returns some text
 	public void onFinishEditDialog(String inputText) {
 		Toast.makeText(this, "Hello, " + inputText, Toast.LENGTH_LONG).show();
+	}
+
+	// ------------------------------------------------------------------
+	// Display an alert inside a dialog fragment. This is the safest way,
+	// since rotation will be handled automatically.
+	// ------------------------------------------------------------------
+	private void showAlertDialog() {
+		FragmentManager fragmentManager = getSupportFragmentManager();
+		AlertDialogFragment alertDialogFragment = new AlertDialogFragment();
+		
+		// Pass parameters to the fragment
+		Bundle args = new Bundle();
+		String message = getResources().getString(R.string.make_a_choice);
+	    args.putString("message", message);
+	    alertDialogFragment.setArguments(args);
+		alertDialogFragment.show(fragmentManager, "fragment_edit_name");
 	}
 
 }

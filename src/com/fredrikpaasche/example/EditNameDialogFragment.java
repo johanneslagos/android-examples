@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
 // A custom class that handles a single dialog. It also listens for editor actions.
-public class EditNameDialog extends DialogFragment implements OnEditorActionListener {
+public class EditNameDialogFragment extends DialogFragment implements OnEditorActionListener {
 
 	String Tag = "Examples";
 	
@@ -27,7 +27,7 @@ public class EditNameDialog extends DialogFragment implements OnEditorActionList
 	private EditText editText;
 
 	// Empty constructor
-	public EditNameDialog() {
+	public EditNameDialogFragment() {
 	}
 
 	@Override
