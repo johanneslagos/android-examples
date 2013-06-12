@@ -6,8 +6,8 @@
     <string name="text_alert">Text alert</string>
     <string name="list_alert">List alert</string>
     <string name="radio_list_alert">Radio button list alert</string>
-    <string name="dialog">Dialog</string>
     <string name="alert_inside_dialog">Alert inside dialog</string>
+    <string name="dialog">Custom dialog</string>
     <string name="handles_rotation">These can handle rotation:</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>

@@ -12,10 +12,11 @@ import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
 
 // A custom class that handles a single dialog. It also listens for editor actions.
+// This class can be used in a dialog or as a component in a view.
 public class EditNameDialogFragment extends DialogFragment implements OnEditorActionListener {
 
 	String Tag = "Examples";
-	
+
 	// This is the definition of an interface. Those who display this dialog can
 	// implement it to get callbacks.
 	public interface EditNameDialogListener {
@@ -34,13 +35,13 @@ public class EditNameDialogFragment extends DialogFragment implements OnEditorAc
 	// At startup, we display the dialog
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.fragment_edit_name, container);
-		
+
 		// Save the edit field for easy access later
 		editText = (EditText) view.findViewById(R.id.txt_your_name);
-		
+
 		// Listen for keyboard events
 		editText.setOnEditorActionListener(this);
-		
+
 		// Put a greeting in the title
 		String title = getResources().getString(R.string.hello_there);
 		getDialog().setTitle(title);
@@ -54,7 +55,8 @@ public class EditNameDialogFragment extends DialogFragment implements OnEditorAc
 		// The DONE button was pressed on the keyboard
 		if (EditorInfo.IME_ACTION_DONE == actionId) {
 
-			// getActivity() only works for fragments. We get the activity of whoever has implemented EditNameDialogListener.
+			// getActivity() only works for fragments. We get the activity of whoever has implemented
+			// EditNameDialogListener.
 			EditNameDialogListener activity = (EditNameDialogListener) getActivity();
 
 			// Now we call a method in whoever has implemented the listener
