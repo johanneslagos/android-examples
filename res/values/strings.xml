@@ -2,7 +2,26 @@
 <resources>
 
     <string name="app_name">Examples</string>
-    <string name="action_settings">Settings</string>
-    <string name="hello_world">Hello world!</string>
 
+    <string name="display_a_toast">Display a toast</string>
+    <string name="display_a_text_alert">Display a text alert</string>
+    <string name="display_a_list_alert">Display a list alert</string>
+    <string name="display_a_radio_list_alert">Display radio button list alert</string>    
+    <string name="display_a_dialog">Display a dialog</string>
+    
+	<string name="yes">Yes</string>
+	<string name="no">No</string>
+    <string name="ok">OK</string>
+	<string name="cancel">Cancel</string>
+    
+    <string name="hello_there">Hello, there!</string>
+    <string name="are_you_ok">Are you OK?</string>
+	<string name="your_name">Your name</string>
+	<string name="thats_great">That\'s great!</string>
+	<string name="too_bad">That\'s too bad.</string>
+    <string name="favourite_color">What\'s your favourite color?</string>
+    <string name="me_too">I like %s too.</string>
+    <string name="thank_you">Thank you for choosing %s.</string>
+    <string name="try_again">OK. Try again later?</string>
+    				
 </resources>
