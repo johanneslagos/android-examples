@@ -1,10 +1,12 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.fragment;
 
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.DialogFragment;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
+
+import com.fredrikpaasche.example.R;
 
 // A custom class that embeds a simple alert view inside a dialog fragment.
 // The reason for doing this is that Android will handle rotation for us.

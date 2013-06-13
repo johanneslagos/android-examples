@@ -3,7 +3,8 @@
 
     <string name="app_name">Examples</string>
     <string name="dialog_examples">Dialog examples</string>
-    <string name="action_bar_examples">Action bar</string>
+    <string name="action_bar">Action bar</string>
+    <string name="navigation_tabs">Navigation tabs</string>
     <string name="toast">Toast</string>
     <string name="text_alert">Text alert</string>
     <string name="list_alert">List alert</string>
@@ -33,5 +34,9 @@
     <string name="search">Search</string>
     <string name="quick_update">Quick update</string>
     <string name="full_update">Full update</string>
-    
+    <string name="people">People</string>
+    <string name="photos">Photos</string>
+    <string name="hierarchy">Hierarchy</string>
+    <string name="settings">Settings</string>
+
 </resources>

@@ -1,7 +1,9 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.fredrikpaasche.example.R;
 
 public class RelativeLayoutActivity extends Activity {
 

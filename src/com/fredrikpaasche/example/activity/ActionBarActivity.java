@@ -1,4 +1,4 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.activity;
 
 import java.lang.reflect.Field;
 
@@ -11,13 +11,15 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.ViewConfiguration;
 
+import com.fredrikpaasche.example.R;
+
 public class ActionBarActivity extends Activity {
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_action_bar);
-		setTitle(R.string.action_bar_examples);
+		setTitle(R.string.action_bar);
 
 		// Make the app icon in the action bar become a back button
 		ActionBar actionBar = getActionBar();

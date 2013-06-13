@@ -1,21 +1,24 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.activity;
 
 import java.util.Locale;
 
+import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.DialogFragment;
+import android.app.FragmentManager;
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.Toast;
 
-import com.fredrikpaasche.example.AlertDialogFragment.NoticeDialogListener;
-import com.fredrikpaasche.example.EditNameDialogFragment.EditNameDialogListener;
+import com.fredrikpaasche.example.R;
+import com.fredrikpaasche.example.fragment.AlertDialogFragment;
+import com.fredrikpaasche.example.fragment.AlertDialogFragment.NoticeDialogListener;
+import com.fredrikpaasche.example.fragment.EditNameDialogFragment;
+import com.fredrikpaasche.example.fragment.EditNameDialogFragment.EditNameDialogListener;
 
 // A custom class that can display a single dialog. It also listens for callbacks from the dialog.
-public class DialogActivity extends FragmentActivity implements EditNameDialogListener, NoticeDialogListener {
+public class DialogActivity extends Activity implements EditNameDialogListener, NoticeDialogListener {
 
 	private String[] colors = { "Red", "Green", "Blue", "Pink" };
 	private int selectedColorIndex;
@@ -177,7 +180,7 @@ public class DialogActivity extends FragmentActivity implements EditNameDialogLi
 	// since rotation will be handled automatically.
 	// ------------------------------------------------------------------
 	private void showAlertDialog() {
-		FragmentManager fragmentManager = getSupportFragmentManager();
+		FragmentManager fragmentManager = getFragmentManager();
 		AlertDialogFragment alertDialogFragment = new AlertDialogFragment();
 
 		// Pass parameters to the fragment. This way, we can use the fragment other places.
@@ -205,7 +208,7 @@ public class DialogActivity extends FragmentActivity implements EditNameDialogLi
 	// since rotation will be handled automatically.
 	// ------------------------------------------------------------------
 	private void showEditDialog() {
-		FragmentManager fragmentManager = getSupportFragmentManager();
+		FragmentManager fragmentManager = getFragmentManager();
 		EditNameDialogFragment editNameDialog = new EditNameDialogFragment();
 		editNameDialog.show(fragmentManager, "alert_dialog");
 	}

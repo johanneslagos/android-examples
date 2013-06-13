@@ -1,4 +1,4 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.activity;
 
 import java.util.ArrayList;
 
@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+
+import com.fredrikpaasche.example.R;
 
 public class MainActivity extends Activity {
 

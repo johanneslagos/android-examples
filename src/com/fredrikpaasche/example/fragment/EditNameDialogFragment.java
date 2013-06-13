@@ -1,7 +1,7 @@
-package com.fredrikpaasche.example;
+package com.fredrikpaasche.example.fragment;
 
+import android.app.DialogFragment;
 import android.os.Bundle;
-import android.support.v4.app.DialogFragment;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +10,8 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TextView.OnEditorActionListener;
+
+import com.fredrikpaasche.example.R;
 
 // A custom class that handles a single dialog. It also listens for editor actions.
 // This class can be used in a dialog or as a component in a view.
