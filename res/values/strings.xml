@@ -2,6 +2,8 @@
 <resources>
 
     <string name="app_name">Examples</string>
+    <string name="dialog_examples">Dialog examples</string>
+    <string name="action_bar_examples">Action bar</string>
     <string name="toast">Toast</string>
     <string name="text_alert">Text alert</string>
     <string name="list_alert">List alert</string>
@@ -25,5 +27,11 @@
     <string name="try_again">OK. Try again later?</string>
     <string name="wisely">You chose wisely.</string>
     <string name="poorly">You chose poorly.</string>
+    <string name="user_name">User name:"</string>
+    <string name="password">Password:"</string>
+    <string name="login">Log in</string>
+    <string name="search">Search</string>
+    <string name="quick_update">Quick update</string>
+    <string name="full_update">Full update</string>
     
 </resources>

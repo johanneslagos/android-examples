@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="20dp" >
+
+    <TextView
+        android:id="@+id/user_name_prompt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:text="@string/user_name" />
+
+    <TextView
+        android:id="@+id/password_prompt"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/user_name_prompt"
+        android:text="@string/password" />
+
+    <EditText
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/user_name_prompt"
+        android:layout_alignRight="@id/user_name_prompt"
+        android:layout_below="@id/user_name_prompt"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/password_prompt"
+        android:layout_alignRight="@id/password_prompt"
+        android:layout_below="@id/password_prompt"
+        android:inputType="textPassword" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/password"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:text="@string/login" />
+
+</RelativeLayout>

@@ -24,6 +24,7 @@ public class DialogActivity extends FragmentActivity implements EditNameDialogLi
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_dialog);
+		setTitle(R.string.dialog_examples);
 	}
 
 	// The Toast button was clicked

@@ -13,7 +13,11 @@ import android.widget.ListView;
 
 public class MainActivity extends Activity {
 
-	String Tag = "Examples";
+	static final String Tag = "Examples";
+	static final String choiceDialogs = "Dialogs";
+	static final String choiceRelativeLayout = "Relative layout";
+	static final String choiceActionBar = "Action bar";
+	
 	ArrayList<String> choices = new ArrayList<String>();
 
 	@Override
@@ -36,17 +40,23 @@ public class MainActivity extends Activity {
 		public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 		final String item = (String) parent.getItemAtPosition(position);
 			Log.d(Tag, item);
-			if (position == 0) {
+			if (item.equals(choiceDialogs)) {
 				startActivity(new Intent(MainActivity.this, DialogActivity.class));
+			}
+			else if (item.equals(choiceRelativeLayout)) {
+				startActivity(new Intent(MainActivity.this, RelativeLayoutActivity.class));
+			}
+			else if (item.equals(choiceActionBar)) {
+				startActivity(new Intent(MainActivity.this, ActionBarActivity.class));
 			}
 		}
 	}; 
 	
 	// Initialize with hard coded values
 	private void initData() {
-		choices.add("Dialogs");
-		choices.add("Lorem");
-		choices.add("Ipsum");
+		choices.add(choiceDialogs);
+		choices.add(choiceRelativeLayout);
+		choices.add(choiceActionBar);
 	}
 
 }
