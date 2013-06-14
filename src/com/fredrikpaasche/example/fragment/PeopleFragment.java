@@ -8,7 +8,6 @@ import android.view.ViewGroup;
 
 import com.fredrikpaasche.example.R;
 
-
 public class PeopleFragment extends Fragment {
 
 	@Override
