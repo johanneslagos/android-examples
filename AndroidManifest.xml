@@ -27,6 +27,7 @@
         <activity android:name="com.fredrikpaasche.example.activity.ActionBarActivity" />
         <activity android:name="com.fredrikpaasche.example.activity.NavigationTabsActivity" />
         <activity android:name="com.fredrikpaasche.example.activity.SwipeActivity" />
+        <activity android:name="com.fredrikpaasche.example.activity.TitleStripActivity" />
     </application>
 
 </manifest>

@@ -21,6 +21,7 @@ public class MainActivity extends Activity {
 	static final String choiceActionBar = "Action bar";
 	static final String choiceNavigationTabs = "Navigation tabs";
 	static final String choiceSwipe = "Swipe navigation";
+	static final String choiceTitleStrip = "Title strip";
 
 	ArrayList<String> choices = new ArrayList<String>();
 
@@ -59,6 +60,9 @@ public class MainActivity extends Activity {
 			else if (item.equals(choiceSwipe)) {
 				startActivity(new Intent(MainActivity.this, SwipeActivity.class));
 			}
+			else if (item.equals(choiceTitleStrip)) {
+				startActivity(new Intent(MainActivity.this, TitleStripActivity.class));
+			}
 		}
 	};
 
@@ -69,5 +73,6 @@ public class MainActivity extends Activity {
 		choices.add(choiceActionBar);
 		choices.add(choiceNavigationTabs);
 		choices.add(choiceSwipe);
+		choices.add(choiceTitleStrip);
 	}
 }

@@ -55,4 +55,19 @@ public class PagerAdapter extends FragmentPagerAdapter {
 		}
 		return null;
 	}
+
+	// This method is used by the PagerTabStrip to show the name of the page
+	public CharSequence getPageTitle(int position) {
+		switch (position) {
+		case 0:
+			return "People";
+		case 1:
+			return "Photos";
+		case 2:
+			return "Hierarchy";
+		case 3:
+			return "Settings";
+		}
+		return null;
+	}
 }
