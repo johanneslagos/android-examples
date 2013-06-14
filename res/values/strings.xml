@@ -38,5 +38,13 @@
     <string name="photos">Photos</string>
     <string name="hierarchy">Hierarchy</string>
     <string name="settings">Settings</string>
+    <string name="page1">Page one</string>
+    <string name="page2">Page two</string>
+    <string name="page3">Page three</string>
+    <string name="page4">Page four</string>
+    <string name="demo1">Page number one</string>
+    <string name="demo2">Page number two</string>
+    <string name="demo3">Page number three</string>
+    <string name="demo4">Page number four</string>
 
 </resources>

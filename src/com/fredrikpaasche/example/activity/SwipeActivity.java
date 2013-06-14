@@ -16,8 +16,8 @@ public class SwipeActivity extends FragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setTitle(R.string.navigation_tabs);
 		setContentView(R.layout.activity_swipe);
+		setTitle(R.string.navigation_tabs);
 
 		// Remember the view pager
         viewPager = (ViewPager) findViewById(R.id.view_pager);

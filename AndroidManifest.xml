@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="13"
+        android:minSdkVersion="11"
         android:targetSdkVersion="17" />
 
     <application
@@ -26,6 +26,7 @@
         <activity android:name="com.fredrikpaasche.example.activity.RelativeLayoutActivity" />
         <activity android:name="com.fredrikpaasche.example.activity.ActionBarActivity" />
         <activity android:name="com.fredrikpaasche.example.activity.NavigationTabsActivity" />
+        <activity android:name="com.fredrikpaasche.example.activity.SwipeActivity" />
     </application>
 
 </manifest>

@@ -6,10 +6,10 @@ import android.app.Activity;
 import android.os.Bundle;
 
 import com.fredrikpaasche.example.R;
-import com.fredrikpaasche.example.fragment.HierarchyFragment;
-import com.fredrikpaasche.example.fragment.PeopleFragment;
-import com.fredrikpaasche.example.fragment.PhotosFragment;
-import com.fredrikpaasche.example.fragment.SettingsFragment;
+import com.fredrikpaasche.example.fragment.DemoFragment1;
+import com.fredrikpaasche.example.fragment.DemoFragment2;
+import com.fredrikpaasche.example.fragment.DemoFragment3;
+import com.fredrikpaasche.example.fragment.DemoFragment4;
 import com.fredrikpaasche.example.listener.TabListener;
 
 public class NavigationTabsActivity extends Activity {
@@ -27,23 +27,23 @@ public class NavigationTabsActivity extends Activity {
 		actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
 
 		Tab tab = actionBar.newTab();
-		tab.setText(R.string.people);
-		tab.setTabListener(new TabListener<PeopleFragment>(this, "people", PeopleFragment.class));
+		tab.setText(R.string.page1);
+		tab.setTabListener(new TabListener<DemoFragment1>(this, "demo1", DemoFragment1.class));
 		actionBar.addTab(tab);
 
 		tab = actionBar.newTab();
-		tab.setText(R.string.photos);
-		tab.setTabListener(new TabListener<PhotosFragment>(this, "photos", PhotosFragment.class));
+		tab.setText(R.string.page2);
+		tab.setTabListener(new TabListener<DemoFragment2>(this, "demo2", DemoFragment2.class));
 		actionBar.addTab(tab);
 
 		tab = actionBar.newTab();
-		tab.setText(R.string.hierarchy);
-		tab.setTabListener(new TabListener<HierarchyFragment>(this, "hierarchy", HierarchyFragment.class));
+		tab.setText(R.string.page3);
+		tab.setTabListener(new TabListener<DemoFragment3>(this, "demo3", DemoFragment3.class));
 		actionBar.addTab(tab);
 
 		tab = actionBar.newTab();
-		tab.setText(R.string.settings);
-		tab.setTabListener(new TabListener<SettingsFragment>(this, "photos", SettingsFragment.class));
+		tab.setText(R.string.page4);
+		tab.setTabListener(new TabListener<DemoFragment4>(this, "demo4", DemoFragment4.class));
 		actionBar.addTab(tab);
 	}
 }

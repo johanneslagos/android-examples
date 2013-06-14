@@ -28,35 +28,31 @@ public class PagerAdapter extends FragmentPagerAdapter {
 
 	@Override
 	public Fragment getItem(int position) {
-		return null;
-		
-		/*
-		
-		Fragment fragment = null;
 		switch (position) {
 		case 0:
 			if (peopleFragment == null) {
 				peopleFragment = new PeopleFragment();
 			}
-			fragment = peopleFragment;
+			return peopleFragment;
+
 		case 1:
 			if (photosFragment == null) {
 				photosFragment = new PhotosFragment();
 			}
-			fragment = photosFragment;
+			return photosFragment;
+
 		case 2:
 			if (hierarchyFragment == null) {
 				hierarchyFragment = new HierarchyFragment();
 			}
-			fragment = hierarchyFragment;
+			return hierarchyFragment;
+
 		case 3:
 			if (settingsFragment == null) {
 				settingsFragment = new SettingsFragment();
 			}
-			fragment = hierarchyFragment;
+			return settingsFragment;
 		}
-		return fragment;
-		*/
+		return null;
 	}
-
 }
